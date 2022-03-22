@@ -1,0 +1,44 @@
+@use '../../scss' as *;
+
+.chat__login {
+    width: 100vw;
+    height: 100vh;
+    background-color: $main-color;
+    @include flex(center, center);
+    &-container {
+        width: 500px;
+        height: 500px;
+        @include flex-col(start, center);
+    }
+    &-title {
+        height: 50px;
+        font-weight: bold;
+    }
+    &-form {
+        height: calc(100% - 100px);
+        background-color: $sub-color;
+        width: 100%;
+        border-radius: 5px;
+        button {
+            @include btn(10px, 10px, $btn-color);
+            font-size: 22px;
+            margin-bottom: 30px;
+            width: 300px;
+            &:hover {
+                background-color: $btn-hover;
+                animation: btnHover 0.5s ease infinite;
+                transition: btnHover 0.5s ease;
+            }
+        }
+        @include flex-col(center, center);
+    }
+}
+
+@keyframes btnHover {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}

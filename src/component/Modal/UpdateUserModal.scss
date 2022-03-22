@@ -1,0 +1,35 @@
+@use '../../scss/' as *;
+.modal__userupdate {
+    @include flex-col(start, center);
+    width: 100%;
+    input {
+        @include inputStyle();
+        text-align: center;
+        width: 500px;
+    }
+    &-avatar {
+        width: 150px;
+        height: 150px;
+        @include flex(center, center);
+        font-size: 70px;
+    }
+    &-name {
+        font-size: 26px;
+        margin-top: 15px;
+    }
+    &-email {
+        font-size: 26px;
+        margin-top: 15px;
+        color: rgb(119, 117, 117);
+    }
+    &-label {
+        width: 100%;
+        display: block;
+        height: 100%;
+        padding: -10px;
+        cursor: pointer;
+    }
+}
+#avatar_update {
+    display: none;
+}

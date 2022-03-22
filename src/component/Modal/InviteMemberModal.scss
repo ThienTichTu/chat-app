@@ -1,0 +1,5 @@
+@use '../../scss' as *;
+.modal__select-option {
+    @include flex(start, center);
+    height: 50px;
+}

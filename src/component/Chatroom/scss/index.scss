@@ -1,0 +1,18 @@
+@use '../../../scss/' as *;
+.chatroom {
+    @include flex(start, start);
+    .sidebar {
+        width: 400px;
+        height: 100%;
+        background-color: $sidebar-color;
+        height: 100vh;
+        @include flex-col(start, start);
+        padding: 10px;
+    }
+    .chatwindow {
+        width: calc(100% - 400px);
+        height: 100vh;
+        box-shadow: 0 2px 4px rgb(15 34 58 / 12%);
+        transition: all 0.5s linear;
+    }
+}

@@ -4,6 +4,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import useFireStore from "../hooks/useFireStore"
 import { auth } from "../firebase/config"
 
+
 export const AuthContext = React.createContext();
 export default function AuthProvider({ children }) {
 

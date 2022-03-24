@@ -3,7 +3,7 @@ import "./UpdateUserModal.scss"
 import { AppContext } from "../../context/AppProvider"
 import { AuthContext } from "../../context/AuthProvider"
 import { Modal, Avatar, Button } from 'antd';
-import { storage, db } from "../../firebase/config"
+import { storage } from "../../firebase/config"
 import { ref, getDownloadURL, uploadBytesResumable } from "@firebase/storage"
 import { updateUser, generateKeywords } from "../../firebase/services"
 export default function UpdateUserModal() {

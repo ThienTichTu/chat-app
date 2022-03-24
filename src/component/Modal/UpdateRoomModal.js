@@ -103,7 +103,7 @@ export default function UpdateRoomModal() {
                 </div>
                 <div className="modal__addroom-row">
                     <div className="modal__addroom-title">
-                        Tên room:
+                        Tên phòng:
                     </div>
                     <input
                         type="text"
@@ -115,7 +115,7 @@ export default function UpdateRoomModal() {
                 </div>
                 <div className="modal__addroom-row">
                     <div className="modal__addroom-title">
-                        Tên room:
+                        Mô tả:
                     </div>
                     <textarea
                         type="text"
